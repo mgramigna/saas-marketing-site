@@ -97,7 +97,10 @@ export default function HomePage() {
         <div className="sm:px-8 px-2">
           <nav className="flex justify-between items-center">
             <div className="flex items-center">
-              <a className="flex items-center gap-2 pr-8" href="/">
+              <a
+                className="flex items-center gap-2 pr-8"
+                href="/saas-marketing-site"
+              >
                 <HeartPulse className="h-10 w-10 text-pink-600" />
                 <span className="font-display">HealthNexus</span>
               </a>
@@ -487,7 +490,7 @@ export default function HomePage() {
               <a
                 className="group"
                 aria-label="HealthNexus on GitHub"
-                href="https://github.com/mgramigna"
+                href="https://github.com/mgramigna/saas-marketing-site"
                 target="_blank"
                 rel="noreferrer"
               >
