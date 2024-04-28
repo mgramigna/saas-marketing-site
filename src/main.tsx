@@ -1,12 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/lexend";
 import "./index.css";
+import HomePage from "./pages/home.tsx";
+import SignIn from "./pages/sign-in.tsx";
+import SignUp from "./pages/sign-up.tsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/sign-in",
+    element: <SignIn />,
+  },
+  {
+    path: "/sign-up",
+    element: <SignUp />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );
