@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import {
   Activity,
   Ambulance,
@@ -101,15 +102,15 @@ export default function HomePage() {
                 <span className="font-display">HealthNexus</span>
               </a>
               <div className="hidden md:flex">
-                <a href="#features">
+                <HashLink to="#features">
                   <Button variant="link">Features</Button>
-                </a>
-                <a href="#testimonials">
+                </HashLink>
+                <HashLink to="#testimonials">
                   <Button variant="link">Testimonials</Button>
-                </a>
-                <a href="#pricing">
+                </HashLink>
+                <HashLink to="#pricing">
                   <Button variant="link">Pricing</Button>
-                </a>
+                </HashLink>
               </div>
             </div>
             <div className="flex gap-4">
@@ -137,25 +138,31 @@ export default function HomePage() {
                   className="rounded-xl top-6"
                 >
                   <div className="flex flex-col gap-8">
-                    <a
-                      href="#features"
+                    <HashLink
+                      to="#features"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Features
-                    </a>
-                    <a
-                      href="#testimonials"
+                    </HashLink>
+                    <HashLink
+                      to="#testimonials"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Testimonials
-                    </a>
-                    <a href="#pricing" onClick={() => setMobileMenuOpen(false)}>
+                    </HashLink>
+                    <HashLink
+                      to="#pricing"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Pricing
-                    </a>
+                    </HashLink>
                     <Separator />
-                    <a href="#" onClick={() => setMobileMenuOpen(false)}>
+                    <Link
+                      to="/sign-in"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Sign In
-                    </a>
+                    </Link>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -281,11 +288,11 @@ export default function HomePage() {
                     into the EMR of your choosing
                   </p>
                   <img
-                    src="/dashboard.png"
+                    src="/saas-marketing-site/dashboard.png"
                     className="rounded-xl hidden md:flex"
                   />
                   <img
-                    src="/dashboard-mobile.png"
+                    src="/saas-marketing-site/dashboard-mobile.png"
                     className="rounded-xl flex md:hidden"
                   />
                 </Tabs.Content>
@@ -294,11 +301,11 @@ export default function HomePage() {
                     Conduct telehealth visits directly in the platform
                   </p>
                   <img
-                    src="/appointments.png"
+                    src="/saas-marketing-site/appointments.png"
                     className="rounded-xl hidden md:flex"
                   />
                   <img
-                    src="/appointments-mobile.png"
+                    src="/saas-marketing-site/appointments-mobile.png"
                     className="rounded-xl flex md:hidden"
                   />
                 </Tabs.Content>
@@ -307,11 +314,11 @@ export default function HomePage() {
                     View all the financial information for your practice
                   </p>
                   <img
-                    src="/finance.png"
+                    src="/saas-marketing-site/finance.png"
                     className="rounded-xl hidden md:flex"
                   />
                   <img
-                    src="/finance-mobile.png"
+                    src="/saas-marketing-site/finance-mobile.png"
                     className="rounded-xl flex md:hidden"
                   />
                 </Tabs.Content>
@@ -463,15 +470,15 @@ export default function HomePage() {
             </div>
             <nav className="mt-10 text-sm">
               <div className="flex justify-center gap-x-6">
-                <a href="#features">
+                <HashLink to="#features">
                   <Button variant="link">Features</Button>
-                </a>
-                <a href="#testimonials">
+                </HashLink>
+                <HashLink to="#testimonials">
                   <Button variant="link">Testimonials</Button>
-                </a>
-                <a href="#pricing">
+                </HashLink>
+                <HashLink to="#pricing">
                   <Button variant="link">Pricing</Button>
-                </a>
+                </HashLink>
               </div>
             </nav>
           </div>
