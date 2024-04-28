@@ -116,14 +116,16 @@ export default function HomePage() {
                 </HashLink>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-1">
               <Link to="/sign-in">
                 <Button variant="link" className="hidden md:flex">
                   Sign In
                 </Button>
               </Link>
               <Link to="/sign-up">
-                <Button animated>Get Started</Button>
+                <Button size="sm" animated>
+                  Get Started
+                </Button>
               </Link>
               <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
                 <SheetTrigger asChild>
