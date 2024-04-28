@@ -1,6 +1,6 @@
 {
-  "name": "-saas-marketing-site",
-  "private": true,
+  "name": "saas-marketing-site",
+  "homepage": "https://mgramigna.github.io/saas-marketing-site",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

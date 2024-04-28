@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/lexend";
 import "./index.css";
@@ -8,7 +8,7 @@ import HomePage from "./pages/home.tsx";
 import SignIn from "./pages/sign-in.tsx";
 import SignUp from "./pages/sign-up.tsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <HomePage />,
